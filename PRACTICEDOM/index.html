@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Hello</title>
+</head>
+
+<body>
+    <div>
+        NO:1 <input type="text" id="no1" onfocus="changeColor(this)" onblur="changeColorOnBlur(this)">
+    </div>
+    <div>
+        NO:2 <input type="text" id="no2" onfocus="changeColor(this)" onblur="changeColorOnBlur(this)">
+    </div>
+    <div>
+        <button id="add" onclick="add()">Add</button>
+    </div>
+    <div>
+        <h3 id="answer"></h3>
+    </div>
+
+    <script>
+        function add() {
+            console.log("add clicked")
+            const n1 = parseFloat(document.getElementById("no1").value)
+            const n2 = parseFloat(document.getElementById("no2").value)
+            const sum = n1 + n2
+            document.getElementById("answer").innerText = sum
+        }
+        function changeColor(element) {
+            console.log("element", element)
+            element.style.backgroundColor = "aqua"
+        }
+        function changeColorOnBlur(element){
+            element.style.backgroundColor="white"
+        }
+
+    </script>
+
+</html>
