@@ -1,0 +1,41 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Resizer</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="upload-box">
+        <input type="file" accept="image/*" hidden>
+       <img width="55.544" height="44.483" src="data:image/png;base64,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" alt="">
+        <p>Browse File to Upload</p>
+      </div>
+      <div class="content">
+        <div class="row sizes">
+          <div class="column width">
+            <label>Width</label>
+            <input type="number">
+          </div>
+          <div class="column height">
+            <label>Height</label>
+            <input type="number">
+          </div>
+        </div>
+        <div class="row checkboxes">
+          <div class="column ratio">
+            <input type="checkbox" id="ratio" checked>
+            <label for="ratio">Lock aspect ratio</label>
+          </div>
+          <div class="column quality">
+            <input type="checkbox" id="quality">
+            <label for="quality">Reduce quality</label>
+          </div>
+        </div>
+        <button class="download-btn">Download Image</button>
+      </div>
+    </div>
+  </body>
+</html>
